@@ -35,7 +35,7 @@ class GameBoy
     when 0
       "nop"
     when 1
-      @cpu.ld("BC", @rom[p + 1].to_u16 + @rom[p + 2].to_u16 * 0x100)
+      @cpu.ld("BC", @rom[p + 1].to_u16 + @rom[p + 2].to_u16 * 100)
       instruction.step = 3
       ######
       "ld BC,nn;nn = #{@rom[p + 1]} and #{@rom[p + 2]} as immediate values"
