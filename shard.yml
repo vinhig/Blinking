@@ -1,0 +1,13 @@
+name: blinking
+version: 0.1.0
+
+authors:
+  - vinhig <vincent.higginson@student.unamur.Be>
+
+targets:
+  blinking:
+    main: src/blinking.cr
+
+crystal: 0.27.2
+
+license: MIT

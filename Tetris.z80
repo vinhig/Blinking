@@ -1,0 +1,1223 @@
+jp nn;nn = 12 and 2 as immediate values
+jp nn;nn = 12 and 2 as immediate values
+nop
+nop
+nop
+nop
+nop
+jp nn;nn = 12 and 2 as immediate values
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+add A,A
+pop HL
+ld E,A
+ld D,n;n = 0 as immediate value
+add HL,DE
+ld E,(HL)
+inc HL
+ld D,(HL)
+push DE
+pop HL
+jp (HL)
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+jp nn;nn = 126 and 1 as immediate values
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+jp nn;nn = 190 and 38 as immediate values
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+jp nn;nn = 190 and 38 as immediate values
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+jp nn;nn = 91 and 0 as immediate values
+push AF
+push HL
+push DE
+push BC
+call nn;nn = 107 and 0 as immediate values
+ld A,n;n = 1 as immediate value
+ldh (n),A;n = 204 as immediate value
+pop bc
+pop DE
+pop HL
+pop AF
+reti
+ldh A,(n);n = 205 as immediate value
+rst 28
+ld A,B
+nop
+sbc A,A
+nop
+and H
+nop
+cp D
+nop
+ld (nn),A
+DAA
+ldh A,(n);n = 225 as immediate value
+cp n;n = 7 as immediate value
+jr Z,n;n = 8 as immediate value
+cp n;n = 6 as immediate value
+ret Z
+ld A,n;n = 6 as immediate value
+ldh (n),A;n = 225 as immediate value
+ret
+ldh A,(n);n = 1 as immediate value
+cp n;n = 85 as immediate value
+jr NZ,n;n = 8 as immediate value
+ld A,n;n = 41 as immediate value
+ldh (n),A;n = 203 as immediate value
+ld A,n;n = 1 as immediate value
+jr n;n = 8 as immediate value
+cp n;n = 41 as immediate value
+ret nz
+ld A,n;n = 85 as immediate value
+ldh (n),A;n = 203 as immediate value
+xor A
+ldh (n),A;n = 2 as immediate value
+ret
+ldh A,(n);n = 1 as immediate value
+ldh (n),A;n = 208 as immediate value
+ret
+ldh A,(n);n = 1 as immediate value
+ldh (n),A;n = 208 as immediate value
+ldh A,(n);n = 203 as immediate value
+cp n;n = 41 as immediate value
+ret Z
+ldh A,(n);n = 207 as immediate value
+ldh (n),A;n = 1 as immediate value
+ld A,n;n = 255 as immediate value
+ldh (n),A;n = 207 as immediate value
+ld A,n;n = 128 as immediate value
+ldh (n),A;n = 2 as immediate value
+ret
+ldh A,(n);n = 1 as immediate value
+ldh (n),A;n = 208 as immediate value
+ldh A,(n);n = 203 as immediate value
+cp n;n = 41 as immediate value
+ret Z
+ldh A,(n);n = 207 as immediate value
+ldh (n),A;n = 1 as immediate value
+ei
+call nn;nn = 152 and 10 as immediate values
+ld A,n;n = 128 as immediate value
+ldh (n),A;n = 2 as immediate value
+ret
+ldh A,(n);n = 205 as immediate value
+cp n;n = 2 as immediate value
+ret nz
+xor A
+ldh (n),A;n = 15 as immediate value
+ei
+ret
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+rst 38
+nop
+jp nn;nn = 80 and 1 as immediate values
+adc A,n;n = 237 as immediate value
+ld H,(HL)
+ld H,(HL)
+call Z,nn;nn = 13 and 0 as immediate values
+dec BC
+inc BC
+ld (HL),E
+nop
+add A,E
+nop
+inc C
+nop
+dec C
+nop
+ld (nn),SP;nn = 17 and 31 as immediate values
+adc A,B
+adc A,C
+nop
+ld C,nn;nn = 220 as immediate value
+call Z,nn;nn = 110 and 230 as immediate values
+nop ;Operation removed on this cpu 221
+nop ;Operation removed on this cpu 221
+reti
+sbc A,C
+cp E
+cp E
+ld H,A
+ld H,E
+ld L,(HL)
+ld C,nn;nn = 236 as immediate value
+call Z,nn;nn = 221 and 220 as immediate values
+sbc A,C
+sbc A,A
+cp E
+cp C
+inc SP
+ld A,n;n = 84 as immediate value
+ld B,L
+ld D,H
+ld D,D
+ld C,C
+ld D,E
+nop
+nop
+nop
+nop
+nop
+nop
+nop
+nop
+nop
+nop
+nop
+nop
+nop
+nop
+nop
+nop
+nop
+ld BC,nn;nn = 1 and 10 as immediate values
+ld D,n;n = 191 as immediate value
+jp nn;nn = 12 and 2 as immediate values
+call nn;nn = 227 and 41 as immediate values
+ldh A,(n);n = 65 as immediate value
+and n;n = 3 as immediate value
+jr NZ,n;n = 250 as immediate value
+ld B,(HL)
+ldh A,(n);n = 65 as immediate value
+and n;n = 3 as immediate value
+jr NZ,n;n = 250 as immediate value
+ld A,(HL)
+and B
+ret
+ld A,E
+add A,(HL)
+DAA
+ldi (HL),A
+ld A,D
+adc A,(HL)
+DAA
+ldi (HL),A
+ld A,n;n = 0 as immediate value
+adc A,(HL)
+DAA
+ld (HL),A
+ld A,n;n = 1 as immediate value
+ldh (n),A;n = 224 as immediate value
+ret NC
+ld A,n;n = 153 as immediate value
+ldd (HL),A
+ldd (HL),A
+ld (HL),A
+ret
+push AF
+push BC
+push DE
+push HL
+ldh A,(n);n = 206 as immediate value
+and A
+jr Z,n;n = 18 as immediate value
+ldh A,(n);n = 203 as immediate value
+cp n;n = 41 as immediate value
+jr NZ,n;n = 12 as immediate value
+xor A
+ldh (n),A;n = 206 as immediate value
+ldh A,(n);n = 207 as immediate value
+ldh (n),A;n = 1 as immediate value
+ld HL,nn;nn = 2 and 255 as immediate values
+ld (HL),n;n = 129 as immediate value
+call nn;nn = 224 and 33 as immediate values
+call nn;nn = 204 and 35 as immediate values
+call nn;nn = 183 and 35 as immediate values
+call nn;nn = 158 and 35 as immediate values
+call nn;nn = 140 and 35 as immediate values
+call nn;nn = 125 and 35 as immediate values
+call nn;nn = 110 and 35 as immediate values
+call nn;nn = 95 and 35 as immediate values
+call nn;nn = 80 and 35 as immediate values
+call nn;nn = 65 and 35 as immediate values
+call nn;nn = 50 and 35 as immediate values
+call nn;nn = 35 and 35 as immediate values
+call nn;nn = 248 and 34 as immediate values
+call nn;nn = 233 and 34 as immediate values
+call nn;nn = 218 and 34 as immediate values
+call nn;nn = 203 and 34 as immediate values
+call nn;nn = 188 and 34 as immediate values
+call nn;nn = 173 and 34 as immediate values
+call nn;nn = 158 and 34 as immediate values
+call nn;nn = 215 and 30 as immediate values
+call nn;nn = 182 and 255 as immediate values
+call nn;nn = 202 and 24 as immediate values
+ld A,(nn);nn = 206 and 192 as immediate values
+and A
+jr Z,n;n = 26 as immediate value
+ldh A,(n);n = 152 as immediate value
+cp n;n = 3 as immediate value
+jr NZ,n;n = 20 as immediate value
+ld HL,nn;nn = 109 and 152 as immediate values
+call nn;nn = 59 and 36 as immediate values
+ld A,n;n = 1 as immediate value
+ldh (n),A;n = 224 as immediate value
+ld HL,nn;nn = 109 and 156 as immediate values
+call nn;nn = 59 and 36 as immediate values
+xor A
+ld (nn),A
+adc A,n;n = 192 as immediate value
+ld HL,nn;nn = 226 and 255 as immediate values
+inc (HL)
+xor A
+ldh (n),A;n = 67 as immediate value
+ldh (n),A;n = 66 as immediate value
+inc A
+ldh (n),A;n = 133 as immediate value
+pop HL
+pop DE
+pop bc
+pop AF
+reti
+xor A
+ld HL,nn;nn = 255 and 223 as immediate values
+ld C,nn;nn = 16 as immediate value
+ld B,n;n = 0 as immediate value
+ldd (HL),A
+dec B
+jr NZ,n;n = 252 as immediate value
+dec C
+jr NZ,n;n = 249 as immediate value
+ld A,n;n = 1 as immediate value
+di
+ldh (n),A;n = 15 as immediate value
+ldh (n),A;n = 255 as immediate value
+xor A
+ldh (n),A;n = 66 as immediate value
+ldh (n),A;n = 67 as immediate value
+ldh (n),A;n = 164 as immediate value
+ldh (n),A;n = 65 as immediate value
+ldh (n),A;n = 1 as immediate value
+ldh (n),A;n = 2 as immediate value
+ld A,n;n = 128 as immediate value
+ldh (n),A;n = 64 as immediate value
+ldh A,(n);n = 68 as immediate value
+cp n;n = 148 as immediate value
+jr NZ,n;n = 250 as immediate value
+ld A,n;n = 3 as immediate value
+ldh (n),A;n = 64 as immediate value
+ld A,n;n = 228 as immediate value
+ldh (n),A;n = 71 as immediate value
+ldh (n),A;n = 72 as immediate value
+ld A,n;n = 196 as immediate value
+ldh (n),A;n = 73 as immediate value
+ld HL,nn;nn = 38 and 255 as immediate values
+ld A,n;n = 128 as immediate value
+ldd (HL),A
+ld A,n;n = 255 as immediate value
+ldd (HL),A
+ld (HL),n;n = 119 as immediate value
+ld A,n;n = 1 as immediate value
+ld (nn),A
+nop
+jr NZ,n;n = 49 as immediate value
+rst 38
+rst 8
+xor A
+ld HL,nn;nn = 255 and 223 as immediate values
+ld B,n;n = 0 as immediate value
+ldd (HL),A
+dec B
+jr NZ,n;n = 252 as immediate value
+ld HL,nn;nn = 255 and 207 as immediate values
+ld C,nn;nn = 16 as immediate value
+ld B,n;n = 0 as immediate value
+ldd (HL),A
+dec B
+jr NZ,n;n = 252 as immediate value
+dec C
+jr NZ,n;n = 249 as immediate value
+ld HL,nn;nn = 255 and 159 as immediate values
+ld C,nn;nn = 32 as immediate value
+xor A
+ld B,n;n = 0 as immediate value
+ldd (HL),A
+dec B
+jr NZ,n;n = 252 as immediate value
+dec C
+jr NZ,n;n = 249 as immediate value
+ld HL,nn;nn = 255 and 254 as immediate values
+ld B,n;n = 0 as immediate value
+ldd (HL),A
+dec B
+jr NZ,n;n = 252 as immediate value
+ld HL,nn;nn = 254 and 255 as immediate values
+ld B,n;n = 128 as immediate value
+ldd (HL),A
+dec B
+jr NZ,n;n = 252 as immediate value
+ld C,nn;nn = 182 as immediate value
+ld B,n;n = 12 as immediate value
+ld HL,nn;nn = 127 and 42 as immediate values
+ldi A,(HL)
+ldh (C),A
+inc C
+dec B
+jr NZ,n;n = 250 as immediate value
+call nn;nn = 149 and 39 as immediate values
+call nn;nn = 243 and 127 as immediate values
+ld A,n;n = 9 as immediate value
+ldh (n),A;n = 255 as immediate value
+ld A,n;n = 55 as immediate value
+ldh (n),A;n = 192 as immediate value
+ld A,n;n = 28 as immediate value
+ldh (n),A;n = 193 as immediate value
+ld A,n;n = 36 as immediate value
+ldh (n),A;n = 225 as immediate value
+ld A,n;n = 128 as immediate value
+ldh (n),A;n = 64 as immediate value
+ei
+xor A
+ldh (n),A;n = 15 as immediate value
+ldh (n),A;n = 74 as immediate value
+ldh (n),A;n = 75 as immediate value
+ldh (n),A;n = 6 as immediate value
+call nn;nn = 166 and 41 as immediate values
+call nn;nn = 248 and 2 as immediate values
+call nn;nn = 240 and 127 as immediate values
+ldh A,(n);n = 128 as immediate value
+and n;n = 15 as immediate value
+cp n;n = 15 as immediate value
+jp Z,nn;nn = 27 and 2 as immediate values
+ld HL,nn;nn = 166 and 255 as immediate values
+ld B,n;n = 2 as immediate value
+ld A,(HL)
+and A
+jr Z,n;n = 1 as immediate value
+dec (HL)
+inc L
+dec B
+jr NZ,n;n = 247 as immediate value
+ldh A,(n);n = 197 as immediate value
+and A
+jr Z,n;n = 4 as immediate value
+ld A,n;n = 9 as immediate value
+ldh (n),A;n = 255 as immediate value
+ldh A,(n);n = 133 as immediate value
+and A
+jr Z,n;n = 251 as immediate value
+xor A
+ldh (n),A;n = 133 as immediate value
+jp nn;nn = 196 and 2 as immediate values
+ldh A,(n);n = 225 as immediate value
+rst 28
+adc A,n;n = 27 as immediate value
+ldh (C),A
+inc E
+ld B,H
+ld (DE),A
+ld A,E
+ld (DE),A
+ld B,n;n = 29 as immediate value
+ld H,n;n = 29 as immediate value
+xor (HL)
+inc BC
+ld A,C
+inc B
+ld B,H
+inc D
+adc A,H
+inc D
+rlc A
+ld A,(DE)
+ret nz
+dec E
+ld D,n;n = 31 as immediate value
+rr A
+rr A
+dec H
+dec D
+or B
+inc D
+ld A,E
+dec D
+cp A
+dec D
+add HL,HL
+ld D,n;n = 122 as immediate value
+ld D,n;n = 235 as immediate value
+ld D,n;n = 19 as immediate value
+add HL,DE
+ld (HL),A
+ld B,n;n = 44 as immediate value
+rlc A
+dec H
+ld (nn),SP;nn = 228 and 8 as immediate values
+ld SP,nn;nn = 11 and 235 as immediate values
+inc C
+jp NC,nn;nn = 10 and 50 as immediate values
+dec C
+inc HL
+ld C,nn;nn = 18 as immediate value
+ld DE,nn;nn = 153 and 13 as immediate values
+adc A,D
+ld C,nn;nn = 206 as immediate value
+dec E
+ld B,C
+ld E,n;n = 105 as immediate value
+inc BC
+sub A,E
+inc BC
+ld H,A
+ld DE,nn;nn = 230 and 17 as immediate values
+nop ;Operation removed on this cpu 252
+ld DE,nn;nn = 28 and 18 as immediate values
+rst 0
+dec B
+rst 30
+dec B
+or E
+ld (DE),A
+dec B
+inc DE
+inc H
+inc DE
+ld D,C
+inc DE
+ld H,A
+inc DE
+ld A,(HL)
+inc DE
+or L
+inc DE
+push HL
+inc DE
+dec DE
+inc DE
+and B
+inc BC
+ld (nn),A
+DAA
+call nn;nn = 32 and 40 as immediate values
+call nn;nn = 215 and 39 as immediate values
+ld DE,nn;nn = 7 and 74 as immediate values
+call nn;nn = 235 and 39 as immediate values
+call nn;nn = 138 and 23 as immediate values
+ld HL,nn;nn = 0 and 195 as immediate values
+ld DE,nn;nn = 80 and 100 as immediate values
+ld A,(DE)
+ldi (HL),A
+inc DE
+ld A,H
+cp n;n = 196 as immediate value
+jr NZ,n;n = 248 as immediate value
+ld A,n;n = 211 as immediate value
+ldh (n),A;n = 64 as immediate value
+ld A,n;n = 250 as immediate value
+ldh (n),A;n = 166 as immediate value
+ld A,n;n = 37 as immediate value
+ldh (n),A;n = 225 as immediate value
+ret
+ldh A,(n);n = 166 as immediate value
+and A
+ret nz
+ld A,n;n = 250 as immediate value
+ldh (n),A;n = 166 as immediate value
+ld A,n;n = 53 as immediate value
+ldh (n),A;n = 225 as immediate value
+ret
+ldh A,(n);n = 129 as immediate value
+and A
+jr NZ,n;n = 4 as immediate value
+ldh A,(n);n = 166 as immediate value
+and A
+ret nz
+ld A,n;n = 6 as immediate value
+ldh (n),A;n = 225 as immediate value
+ret
+call nn;nn = 32 and 40 as immediate values
+xor A
+ldh (n),A;n = 233 as immediate value
+ldh (n),A;n = 152 as immediate value
+ldh (n),A;n = 156 as immediate value
+ldh (n),A;n = 155 as immediate value
+ldh (n),A;n = 251 as immediate value
+ldh (n),A;n = 159 as immediate value
+ldh (n),A;n = 227 as immediate value
+ldh (n),A;n = 199 as immediate value
+call nn;nn = 147 and 34 as immediate values
+call nn;nn = 81 and 38 as immediate values
+call nn;nn = 215 and 39 as immediate values
+ld HL,nn;nn = 0 and 200 as immediate values
+ld A,n;n = 47 as immediate value
+ldi (HL),A
+ld A,H
+cp n;n = 204 as immediate value
+jr NZ,n;n = 248 as immediate value
+ld HL,nn;nn = 1 and 200 as immediate values
+call nn;nn = 169 and 38 as immediate values
+ld HL,nn;nn = 12 and 200 as immediate values
+call nn;nn = 169 and 38 as immediate values
+ld HL,nn;nn = 65 and 202 as immediate values
+ld B,n;n = 12 as immediate value
+ld A,n;n = 142 as immediate value
+ldi (HL),A
+dec B
+jr NZ,n;n = 252 as immediate value
+ld DE,nn;nn = 111 and 75 as immediate values
+call nn;nn = 235 and 39 as immediate values
+call nn;nn = 138 and 23 as immediate values
+ld HL,nn;nn = 0 and 192 as immediate values
+ld (HL),n;n = 128 as immediate value
+inc L
+ld (HL),n;n = 16 as immediate value
+inc L
+ld (HL),n;n = 88 as immediate value
+ld A,n;n = 3 as immediate value
+ld (nn),A
+add SP,d
+rst 18
+ld A,n;n = 211 as immediate value
+ldh (n),A;n = 64 as immediate value
+ld A,n;n = 7 as immediate value
+ldh (n),A;n = 225 as immediate value
+ld A,n;n = 125 as immediate value
+ldh (n),A;n = 166 as immediate value
+ld A,n;n = 4 as immediate value
+ldh (n),A;n = 198 as immediate value
+ldh A,(n);n = 228 as immediate value
+and A
+ret nz
+ld A,n;n = 19 as immediate value
+ldh (n),A;n = 198 as immediate value
+ret
+ld A,n;n = 55 as immediate value
+ldh (n),A;n = 192 as immediate value
+ld A,n;n = 9 as immediate value
+ldh (n),A;n = 194 as immediate value
+xor A
+ldh (n),A;n = 197 as immediate value
+ldh (n),A;n = 176 as immediate value
+ldh (n),A;n = 237 as immediate value
+ldh (n),A;n = 234 as immediate value
+ld A,n;n = 98 as immediate value
+ldh (n),A;n = 235 as immediate value
+ld A,n;n = 176 as immediate value
+ldh (n),A;n = 236 as immediate value
+ldh A,(n);n = 228 as immediate value
+cp n;n = 2 as immediate value
+ld A,n;n = 2 as immediate value
+jr NZ,n;n = 26 as immediate value
+ld A,n;n = 119 as immediate value
+ldh (n),A;n = 192 as immediate value
+ld A,n;n = 9 as immediate value
+ldh (n),A;n = 195 as immediate value
+ld A,n;n = 2 as immediate value
+ldh (n),A;n = 196 as immediate value
+ld A,n;n = 99 as immediate value
+ldh (n),A;n = 235 as immediate value
+ld A,n;n = 176 as immediate value
+ldh (n),A;n = 236 as immediate value
+ld A,n;n = 17 as immediate value
+ldh (n),A;n = 176 as immediate value
+ld A,n;n = 1 as immediate value
+ldh (n),A;n = 228 as immediate value
+ld A,n;n = 10 as immediate value
+ldh (n),A;n = 225 as immediate value
+call nn;nn = 32 and 40 as immediate values
+call nn;nn = 173 and 39 as immediate values
+ld DE,nn;nn = 215 and 76 as immediate values
+call nn;nn = 235 and 39 as immediate values
+call nn;nn = 138 and 23 as immediate values
+ld A,n;n = 211 as immediate value
+ldh (n),A;n = 64 as immediate value
+ret
+ld A,n;n = 255 as immediate value
+ldh (n),A;n = 233 as immediate value
+ret
+ldh A,(n);n = 166 as immediate value
+and A
+jr NZ,n;n = 10 as immediate value
+ld HL,nn;nn = 198 and 255 as immediate values
+dec (HL)
+jr Z,n;n = 155 as immediate value
+ld A,n;n = 125 as immediate value
+ldh (n),A;n = 166 as immediate value
+call nn;nn = 152 and 10 as immediate values
+ld A,n;n = 85 as immediate value
+ldh (n),A;n = 1 as immediate value
+ld A,n;n = 128 as immediate value
+ldh (n),A;n = 2 as immediate value
+ldh A,(n);n = 204 as immediate value
+and A
+jr Z,n;n = 10 as immediate value
+ldh A,(n);n = 203 as immediate value
+and A
+jr NZ,n;n = 58 as immediate value
+xor A
+ldh (n),A;n = 204 as immediate value
+jr n;n = 103 as immediate value
+ldh A,(n);n = 129 as immediate value
+ld B,A
+ldh A,(n);n = 197 as immediate value
+ext ops
+ld D,B
+jr NZ,n;n = 72 as immediate value
+ext ops
+ld H,B
+jr NZ,n;n = 83 as immediate value
+ext ops
+ld L,B
+jr NZ,n;n = 84 as immediate value
+ext ops
+ld E,B
+ret Z
+and A
+ld A,n;n = 8 as immediate value
+jr Z,n;n = 44 as immediate value
+ld A,B
+cp n;n = 8 as immediate value
+ret nz
+ldh A,(n);n = 203 as immediate value
+cp n;n = 41 as immediate value
+jr Z,n;n = 18 as immediate value
+ld A,n;n = 41 as immediate value
+ldh (n),A;n = 1 as immediate value
+ld A,n;n = 129 as immediate value
+ldh (n),A;n = 2 as immediate value
+ldh A,(n);n = 204 as immediate value
+and A
+jr Z,n;n = 251 as immediate value
+ldh A,(n);n = 203 as immediate value
+and A
+jr Z,n;n = 50 as immediate value
+ld A,n;n = 42 as immediate value
+ldh (n),A;n = 225 as immediate value
+xor A
+ldh (n),A;n = 166 as immediate value
+ldh (n),A;n = 194 as immediate value
+ldh (n),A;n = 195 as immediate value
+ldh (n),A;n = 196 as immediate value
+ldh (n),A;n = 228 as immediate value
+ret
+push AF
+ldh A,(n);n = 128 as immediate value
+ext ops
+ld A,A
+jr Z,n;n = 2 as immediate value
+ldh (n),A;n = 244 as immediate value
+pop AF
+jr n;n = 230 as immediate value
+xor n;n = 1 as immediate value
+ldh (n),A;n = 197 as immediate value
+and A
+ld A,n;n = 16 as immediate value
+jr Z,n;n = 2 as immediate value
+ld A,n;n = 96 as immediate value
+ld (nn),A
+ld BC,nn;nn = 192 and 201 as immediate values
+and A
+ret nz
+xor A
+jr n;n = 236 as immediate value
+and A
+ret Z
+xor A
+jr n;n = 233 as immediate value
+ldh A,(n);n = 228 as immediate value
+and A
+ret Z
+call nn;nn = 152 and 10 as immediate values
+xor A
+ldh (n),A;n = 1 as immediate value
+ld A,n;n = 128 as immediate value
+ldh (n),A;n = 2 as immediate value
+ldh A,(n);n = 129 as immediate value
+ext ops
+ld E,A
+jr Z,n;n = 13 as immediate value
+ld A,n;n = 51 as immediate value
+ldh (n),A;n = 1 as immediate value
+ld A,n;n = 129 as immediate value
+ldh (n),A;n = 2 as immediate value
+ld A,n;n = 6 as immediate value
+ldh (n),A;n = 225 as immediate value
+ret
+ld HL,nn;nn = 176 and 255 as immediate values
+ldh A,(n);n = 228 as immediate value
+cp n;n = 2 as immediate value
+ld B,n;n = 16 as immediate value
+jr Z,n;n = 2 as immediate value
+ld B,n;n = 29 as immediate value
+ld A,(HL)
+cp B
+ret nz
+ld A,n;n = 6 as immediate value
+ldh (n),A;n = 225 as immediate value
+ret
+ldh A,(n);n = 228 as immediate value
+and A
+ret Z
+ldh A,(n);n = 233 as immediate value
+cp n;n = 255 as immediate value
+ret Z
+ldh A,(n);n = 234 as immediate value
+and A
+jr Z,n;n = 5 as immediate value
+dec A
+ldh (n),A;n = 234 as immediate value
+jr n;n = 28 as immediate value
+ldh A,(n);n = 235 as immediate value
+ld H,A
+ldh A,(n);n = 236 as immediate value
+ld L,A
+ldi A,(HL)
+ld B,A
+ldh A,(n);n = 237 as immediate value
+xor B
+and B
+ldh (n),A;n = 129 as immediate value
+ld A,B
+ldh (n),A;n = 237 as immediate value
+ldi A,(HL)
+ldh (n),A;n = 234 as immediate value
+ld A,H
+ldh (n),A;n = 235 as immediate value
+ld A,L
+ldh (n),A;n = 236 as immediate value
+jr n;n = 3 as immediate value
+xor A
+ldh (n),A;n = 129 as immediate value
+ldh A,(n);n = 128 as immediate value
+ldh (n),A;n = 238 as immediate value
+ldh A,(n);n = 237 as immediate value
+ldh (n),A;n = 128 as immediate value
+ret
+xor A
+ldh (n),A;n = 237 as immediate value
+jr n;n = 239 as immediate value
+ret
+ldh A,(n);n = 228 as immediate value
+and A
+ret Z
+ldh A,(n);n = 233 as immediate value
+cp n;n = 255 as immediate value
+ret nz
+ldh A,(n);n = 128 as immediate value
+ld B,A
+ldh A,(n);n = 237 as immediate value
+cp B
+jr Z,n;n = 25 as immediate value
+ldh A,(n);n = 235 as immediate value
+ld H,A
+ldh A,(n);n = 236 as immediate value
+ld L,A
+ldh A,(n);n = 237 as immediate value
+ldi (HL),A
+ldh A,(n);n = 234 as immediate value
+ldi (HL),A
+ld A,H
+ldh (n),A;n = 235 as immediate value
+ld A,L
+ldh (n),A;n = 236 as immediate value
+ld A,B
+ldh (n),A;n = 237 as immediate value
+xor A
+ldh (n),A;n = 234 as immediate value
+ret
+ldh A,(n);n = 234 as immediate value
+inc A
+ldh (n),A;n = 234 as immediate value
+ret
+ldh A,(n);n = 228 as immediate value
+and A
+ret Z
+ldh A,(n);n = 233 as immediate value
+and A
+ret nz
+ldh A,(n);n = 238 as immediate value
+ldh (n),A;n = 128 as immediate value
+ret
+ld HL,nn;nn = 2 and 255 as immediate values
+ext ops
+cp n;n = 24 as immediate value
+ld A,(BC)
+ld A,n;n = 3 as immediate value
+ldh (n),A;n = 205 as immediate value
+ldh A,(n);n = 203 as immediate value
+cp n;n = 41 as immediate value
+jr NZ,n;n = 239 as immediate value
+call nn;nn = 79 and 20 as immediate values
+ld A,n;n = 128 as immediate value
+ld (nn),A
+stop
+jp NZ,nn;nn = 205 and 113 as immediate values
+ld H,n;n = 224 as immediate value
+adc A,n;n = 175 as immediate value
+ldh (n),A;n = 1 as immediate value
+ldh (n),A;n = 207 as immediate value
+ldh (n),A;n = 220 as immediate value
+ldh (n),A;n = 210 as immediate value
+ldh (n),A;n = 211 as immediate value
+ldh (n),A;n = 212 as immediate value
+ldh (n),A;n = 213 as immediate value
+ldh (n),A;n = 227 as immediate value
+call nn;nn = 243 and 127 as immediate values
+ld A,n;n = 43 as immediate value
+ldh (n),A;n = 225 as immediate value
+ret
+ldh A,(n);n = 203 as immediate value
+cp n;n = 41 as immediate value
+jr Z,n;n = 22 as immediate value
+ldh A,(n);n = 240 as immediate value
+and A
+jr Z,n;n = 30 as immediate value
+xor A
+ldh (n),A;n = 240 as immediate value
+ld DE,nn;nn = 1 and 194 as immediate values
+call nn;nn = 146 and 20 as immediate values
+call nn;nn = 23 and 21 as immediate values
+call nn;nn = 113 and 38 as immediate values
+jr n;n = 13 as immediate value
+ldh A,(n);n = 129 as immediate value
+ext ops
+ld B,A
+jr NZ,n;n = 7 as immediate value
+ext ops
+ld E,A
+jr NZ,n;n = 3 as immediate value
+call nn;nn = 176 and 20 as immediate values
+ldh A,(n);n = 203 as immediate value
+cp n;n = 41 as immediate value
+jr Z,n;n = 30 as immediate value
+ldh A,(n);n = 204 as immediate value
+and A
+ret Z
+xor A
+ldh (n),A;n = 204 as immediate value
+ld A,n;n = 57 as immediate value
+ldh (n),A;n = 207 as immediate value
+ldh A,(n);n = 208 as immediate value
+cp n;n = 80 as immediate value
+jr Z,n;n = 45 as immediate value
+ld B,A
+ldh A,(n);n = 193 as immediate value
+cp B
+ret Z
+ld A,B
+ldh (n),A;n = 193 as immediate value
+ld A,n;n = 1 as immediate value
+ldh (n),A;n = 240 as immediate value
+ret
+ldh A,(n);n = 129 as immediate value
+ext ops
+ld E,A
+jr NZ,n;n = 34 as immediate value
+ext ops
+ld B,A
+jr NZ,n;n = 30 as immediate value
+ldh A,(n);n = 204 as immediate value
+and A
+ret Z
+xor A
+ldh (n),A;n = 204 as immediate value
+ldh A,(n);n = 207 as immediate value
+cp n;n = 80 as immediate value
+jr Z,n;n = 9 as immediate value
+ldh A,(n);n = 193 as immediate value
+ldh (n),A;n = 207 as immediate value
+ld A,n;n = 1 as immediate value
+ldh (n),A;n = 206 as immediate value
+ret
+call nn;nn = 138 and 23 as immediate values
+ld A,n;n = 22 as immediate value
+ldh (n),A;n = 225 as immediate value
+ret
+ld A,n;n = 80 as immediate value
+jr n;n = 237 as immediate value
+ld HL,nn;nn = 2 and 255 as immediate values
+ext ops
+cp n;n = 24 as immediate value
+rr A
+ld A,n;n = 3 as immediate value
+ldh (n),A;n = 205 as immediate value
+ldh A,(n);n = 203 as immediate value
+cp n;n = 41 as immediate value
+jr NZ,n;n = 239 as immediate value
+call nn;nn = 161 and 10 as immediate values
+call nn;nn = 161 and 10 as immediate values
+call nn;nn = 161 and 10 as immediate values
+ld B,n;n = 0 as immediate value
+ld HL,nn;nn = 0 and 195 as immediate values
+call nn;nn = 161 and 10 as immediate values
+ldi (HL),A
+dec B
+jr NZ,n;n = 249 as immediate value
+call nn;nn = 32 and 40 as immediate values
+call nn;nn = 173 and 39 as immediate values
+ld DE,nn;nn = 20 and 82 as immediate values
+call nn;nn = 235 and 39 as immediate values
+call nn;nn = 138 and 23 as immediate values
+ld A,n;n = 47 as immediate value
+call nn;nn = 221 and 31 as immediate values
+ld A,n;n = 3 as immediate value
+ldh (n),A;n = 206 as immediate value
+xor A
+ldh (n),A;n = 1 as immediate value
+ldh (n),A;n = 207 as immediate value
+ldh (n),A;n = 220 as immediate value
+ldh (n),A;n = 210 as immediate value
+ldh (n),A;n = 211 as immediate value
+ldh (n),A;n = 212 as immediate value
+ldh (n),A;n = 213 as immediate value
+ldh (n),A;n = 227 as immediate value
+ldh (n),A;n = 204 as immediate value
+ld HL,nn;nn = 0 and 196 as immediate values
+ld B,n;n = 10 as immediate value
+ld A,n;n = 40 as immediate value
+ldi (HL),A
+dec B
+jr NZ,n;n = 252 as immediate value
+ldh A,(n);n = 214 as immediate value
+and A
+jp NZ,nn;nn = 109 and 7 as immediate values
+call nn;nn = 23 and 21 as immediate values
+ld A,n;n = 211 as immediate value
+ldh (n),A;n = 64 as immediate value
+ld HL,nn;nn = 128 and 192 as immediate values
+ld DE,nn;nn = 5 and 7 as immediate values
+ld B,n;n = 32 as immediate value
+call nn;nn = 37 and 7 as immediate values
+ld HL,nn;nn = 0 and 194 as immediate values
+ld DE,nn;nn = 237 and 38 as immediate values
+ld C,nn;nn = 2 as immediate value
+call nn;nn = 118 and 23 as immediate values
+call nn;nn = 14 and 8 as immediate values
+call nn;nn = 113 and 38 as immediate values
+xor A
+ldh (n),A;n = 215 as immediate value
+ldh (n),A;n = 216 as immediate value
+ldh (n),A;n = 217 as immediate value
+ldh (n),A;n = 218 as immediate value
+ldh (n),A;n = 219 as immediate value
+ld A,n;n = 23 as immediate value
+ldh (n),A;n = 225 as immediate value
+ret
+ld B,B
+jr Z,n;n = 174 as immediate value
+nop
+ld B,B
+jr NC,n;n = 174 as immediate value
+jr NZ,n;n = 72 as immediate value
+jr Z,n;n = 175 as immediate value
+nop
+ld C,B
+jr NC,n;n = 175 as immediate value
+jr NZ,n;n = 120 as immediate value
+jr Z,n;n = 192 as immediate value
+nop
+ld A,B
+jr NC,n;n = 192 as immediate value
+jr NZ,n;n = 128 as immediate value
+jr Z,n;n = 193 as immediate value
+nop
+add A,B
+jr NC,n;n = 193 as immediate value
+jr NZ,n;n = 26 as immediate value
+ldi (HL),A
+inc DE
+dec B
+jr NZ,n;n = 250 as immediate value
+ret
+ldh A,(n);n = 203 as immediate value
+cp n;n = 41 as immediate value
+jr Z,n;n = 35 as immediate value
+ldh A,(n);n = 204 as immediate value
+and A
+jr Z,n;n = 19 as immediate value
+ldh A,(n);n = 208 as immediate value
+cp n;n = 96 as immediate value
+jr Z,n;n = 45 as immediate value
+cp n;n = 6 as immediate value
+jr NC,n;n = 2 as immediate value
+ldh (n),A;n = 172 as immediate value
+ldh A,(n);n = 173 as immediate value
+ldh (n),A;n = 207 as immediate value
+xor A
+ldh (n),A;n = 204 as immediate value
+ld DE,nn;nn = 16 and 194 as immediate values
+call nn;nn = 102 and 23 as immediate values
+ld HL,nn;nn = 173 and 255 as immediate values
+jr n;n = 104 as immediate value
+ldh A,(n);n = 129 as immediate value
+ext ops
+ld E,A
+jr Z,n;n = 4 as immediate value
+ld A,n;n = 96 as immediate value
+jr n;n = 77 as immediate value
+ldh A,(n);n = 204 as immediate value
+and A
+jr Z,n;n = 80 as immediate value
+ldh A,(n);n = 207 as immediate value
+cp n;n = 96 as immediate value
+jr NZ,n;n = 56 as immediate value
+call nn;nn = 138 and 23 as immediate values
+ldh A,(n);n = 214 as immediate value
+and A
+jr NZ,n;n = 24 as immediate value
+ld A,n;n = 24 as immediate value
+ldh (n),A;n = 225 as immediate value
+ldh A,(n);n = 203 as immediate value
+cp n;n = 41 as immediate value
+ret nz
+xor A
+ldh (n),A;n = 160 as immediate value
+ld A,n;n = 6 as immediate value
+ld DE,nn;nn = 224 and 255 as immediate values
+ld HL,nn;nn = 162 and 201 as immediate values
+call nn;nn = 104 and 27 as immediate values
+ret
+ldh A,(n);n = 203 as immediate value
+cp n;n = 41 as immediate value
+jp NZ,nn;nn = 40 and 8 as immediate values
+xor A
+ldh (n),A;n = 160 as immediate value
+ld A,n;n = 6 as immediate value
+ld DE,nn;nn = 224 and 255 as immediate values
+ld HL,nn;nn = 162 and 201 as immediate values
+call nn;nn = 104 and 27 as immediate values
+jp nn;nn = 40 and 8 as immediate values
+ldh A,(n);n = 208 as immediate value
+cp n;n = 6 as immediate value
+jr NC,n;n = 2 as immediate value
+ldh (n),A;n = 173 as immediate value
+ldh A,(n);n = 172 as immediate value
+ldh (n),A;n = 207 as immediate value
+xor A
+ldh (n),A;n = 204 as immediate value
+inc A
+ldh (n),A;n = 206 as immediate value
+ld DE,nn;nn = 0 and 194 as immediate values
+call nn;nn = 102 and 23 as immediate values
+ld HL,nn;nn = 172 and 255 as immediate values
+ld A,(HL)
+ext ops
+ld H,B
+jr NZ,n;n = 20 as immediate value
+ext ops
+ld L,B
+jr NZ,n;n = 34 as immediate value
+ext ops
+ld (HL),B
+jr NZ,n;n = 36 as immediate value
+ext ops
+ld A,B
+jr Z,n;n = 19 as immediate value
+cp n;n = 3 as immediate value
+jr NC,n;n = 15 as immediate value
+add A,n;n = 3 as immediate value
+jr n;n = 5 as immediate value
+cp n;n = 5 as immediate value
+jr Z,n;n = 7 as immediate value
+inc A
+ld (HL),A
+ld A,n;n = 1 as immediate value
+ld (nn),A
+ldh (n),A;n = 223 as immediate value
+call nn;nn = 14 and 8 as immediate values
+call nn;nn = 113 and 38 as immediate values
+ret
+and A
+jr Z,n;n = 246 as immediate value
+dec A
+jr n;n = 237 as immediate value
+cp n;n = 3 as immediate value
+jr C,n;n = 239 as immediate value
+sub A,n;n = 3 as immediate value
+jr n;n = 229 as immediate value
+ld B,B
+ld H,B
+ld B,B
+ld (HL),B
+ld B,B
+add A,B
+ld D,B
+ld H,B
+ld D,B
+ld (HL),B
