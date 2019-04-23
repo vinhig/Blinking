@@ -46,17 +46,17 @@ class GameBoy
       "ld (BC),A"
       ######
     when 3
-      @cpu.add("BC", 1_u8)
+      @cpu.inc("BC")
       ######
       "inc BC"
       ######
     when 4
-      @cpu.add("B", 1_u8)
+      @cpu.inc("B")
       ######
       "inc B"
       ######
     when 5
-      @cpu.add("B", Int8.new(-1))
+      @cpu.dec("B")
       ######
       "dec B"
       ######
@@ -67,7 +67,9 @@ class GameBoy
       "ld B,n;n = #{@rom[p + 1]} as immediate value"
       ######
     when 7
+      ######
       "rlc A"
+      ######
     when 8
       instruction.step = 3
       "ld (nn),SP;nn = #{@rom[p + 1]} and #{@rom[p + 2]} as immediate values"

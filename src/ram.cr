@@ -1,18 +1,26 @@
+require "colorize"
+
 class Ram
+  # 8bit register
   property a : UInt8
   property b : UInt8
-  property c : UInt8
+  property c : UInt8 # It's a flag too
   property d : UInt8
   property e : UInt8
   property f : UInt8
   property h : UInt8
   property l : UInt8
+  property z : UInt8   # It's a flag too
+  property n : UInt8   # It's a flag too
+  property p_v : UInt8 # It's a truc too
 
+  # 16bit register
   property af : UInt16
   property bc : UInt16
   property de : UInt16
   property hl : UInt16
 
+  # Memory map
   property memory : Hash(UInt16, UInt8)
 
   def initialize
@@ -25,6 +33,9 @@ class Ram
     @f = 0_u8
     @h = 0_u8
     @l = 0_u8
+    @z = 0_u8
+    @n = 0_u8
+    @p_v = 0_u8
     # 16bit register
     @af = 0_u16
     @bc = 0_u16
@@ -52,6 +63,12 @@ class Ram
       @h
     when "L"
       @l
+    when "Z"
+      @z
+    when "N"
+      @n
+    when "PV"
+      @p_v
     when "AF"
       @af
     when "BC"
@@ -66,7 +83,7 @@ class Ram
   end
 
   def set_value(register : String, value : UInt8 | UInt16)
-    puts "  (value set : #{value})"
+    puts "  value set : #{value.colorize(:green)}".colorize(:yellow)
     case register
     when "A"
       @a = UInt8.new(value)
@@ -84,6 +101,12 @@ class Ram
       @h = UInt8.new(value)
     when "L"
       @l = UInt8.new(value)
+    when "Z"
+      @z = UInt8.new(value)
+    when "N"
+      @n = UInt8.new(value)
+    when "PV"
+      @p_v = UInt8.new(value)
     when "AF"
       @af = UInt16.new(value)
     when "BC"

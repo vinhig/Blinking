@@ -18,41 +18,67 @@ class Cpu
   #
   # ```add A,n```
   def add(reg1 : String, value : UInt8 | Int8)
-    puts "Add #{value} to register #{reg1}"
+    puts "Add #{value} to register #{reg1.colorize(:red).mode(:bold)}"
     @ram.set_value(reg1, @ram.get_value(reg1) + value)
   end
 
-  # Load a register into another.
+  # Increment by 1 a value stored in a register.
+  # Flag N is reset.
+  # Flag Z is set to one if result equals zero.
   #
-  # ```ld A,B```
-  def ld(reg1 : String, reg2 : String)
+  # ```inc A```
+  def inc(reg1 : String)
+    puts "Increment by 1 value at register #{reg1.colorize(:red).mode(:bold)}"
+    @ram.set_value(reg1, @ram.get_value(reg1) + 1_u8)
+    # Flag N is reset.
+    puts "... must reset N register ¯\\_(ツ)_/¯"
+    @ram.set_value("N", 0_u8)
+    if @ram.get_value(reg1) == 0_u8 || @ram.get_value(reg1) == 0_u16
+      puts "... must set Z register ¯\\_(ツ)_/¯"
+      @ram.set_value("Z", 1_u8)
+    end
   end
 
-  # Load a 8bit integer into a register.
+  # Decrement by 1 a value stored in a register.
+  #
+  # ```inc A```
+  def dec(reg1 : String)
+    puts "Decrement by 1 value at register #{reg1.colorize(:red).mode(:bold)}"
+    @ram.set_value(reg1, @ram.get_value(reg1) - 1_u8)
+    # Flag N is reset.
+    puts "... must reset N register ¯\\_(ツ)_/¯"
+    @ram.set_value("N", 0_u8)
+    if @ram.get_value(reg1) == 0_u8 || @ram.get_value(reg1) == 0_u16
+      puts "... must set Z register ¯\\_(ツ)_/¯"
+      @ram.set_value("Z", 1_u8)
+    end
+  end
+
+  # Load a 8bit integer into a register (load instruction will never modify flag).
   #
   # ```ld A,n```
   def ld(reg1 : String, arg : UInt8)
-    puts "Loaded a 8bit int to #{reg1}"
+    puts "Loaded a 8bit int to #{reg1.colorize(:red).mode(:bold)}"
     @ram.set_value(reg1, arg)
   end
 
-  # Load a 8bit integer into a register.
+  # Load a 8bit integer into a register (load instruction will never modify flag).
   #
   # ```ld AB,nn```
   def ld(reg1 : String, arg : UInt16)
-    puts "Loaded a 16bit int to #{reg1}"
+    puts "Loaded a 16bit int to #{reg1.colorize(:red).mode(:bold)}"
     @ram.set_value(reg1, arg)
   end
 
-  # Load a value at a specified address to a register.
+  # Load a value at a specified address to a register (load instruction will never modify flag).
   #
   # ```ld (AB),H```
-  def ld_f(address : String, register : String)
+  def ld_f(reg1 : String, address : String)
     ######
     # ld (AB),A
     ######
-    puts "Loaded value at #{address} to #{register}"
-    @ram.set_value_f(address, register)
+    puts "Loaded value at #{address} to #{reg1.colorize(:red).mode(:bold)}"
+    @ram.set_value_f(address, reg1)
   end
 
   def disassemblez80(instruction : Instruction, buffer : Slice(UInt8), p : Int32) : String
