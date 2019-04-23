@@ -67,12 +67,15 @@ class GameBoy
       "ld B,n;n = #{@rom[p + 1]} as immediate value"
       ######
     when 7
+      @cpu.rlc("A")
       ######
       "rlc A"
       ######
     when 8
       instruction.step = 3
+      ######
       "ld (nn),SP;nn = #{@rom[p + 1]} and #{@rom[p + 2]} as immediate values"
+      ######
     when 9
       "add HL,BC"
     when 10

@@ -45,6 +45,7 @@ class Ram
     @memory = Hash(UInt16, UInt8).new
   end
 
+  # Get the value of a specific register.
   def get_value(register : String) : UInt16 | UInt8
     case register
     when "A"
@@ -82,6 +83,7 @@ class Ram
     end
   end
 
+  # Set the value of a specific register.
   def set_value(register : String, value : UInt8 | UInt16)
     puts "  value set : #{value.colorize(:green)}".colorize(:yellow)
     case register
@@ -118,9 +120,14 @@ class Ram
     end
   end
 
+  # Set the value of a register as the value of a specified register.
   def set_value_f(address : String, register : String)
     # Set value in the memory at the specified address
     set_value(register, get_value(address))
     puts "  (#{register} copied from *#{address})"
+  end
+
+  # Get the value at specified memory map address.
+  def set_value_f(address : UInt16)
   end
 end

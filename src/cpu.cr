@@ -81,6 +81,26 @@ class Cpu
     @ram.set_value_f(address, reg1)
   end
 
+  # Load a value from a specified address to a register (load instruction will never modify flag).
+  #
+  # ```ld (nn),AB```
+  def ld_f(reg1 : String, address : UInt16)
+    nn = @ram.get_value_f(address)
+  end
+
+  # 8bit rotation to the left.
+  #
+  # ```rlc A```
+  def rlc(reg1 : String)
+    ######
+    # rlc A
+    ######
+    puts "Shift left register #{reg1.colorize(:red).mode(:bold)}"
+    n = @ram.get_value(reg1)
+    n = (n << 1) | (n >> (8 - 1))
+    @ram.set_value(reg1, n)
+  end
+
   def disassemblez80(instruction : Instruction, buffer : Slice(UInt8), p : Int32) : String
     opcode = Int32.new(instruction.opcode)
     case opcode
